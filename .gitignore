@@ -1,5 +1,8 @@
 .env
 env/
+dist/
+polyhash.egg-info/
+build/
 
 .DS_Store
 __pycache__/
