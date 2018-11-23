@@ -16,7 +16,7 @@ pip install requirements.txt
 ## Installing
 
 ```
-$ pip install polyhash
+$ pip install python-polyhash
 ```
 
 ## Usage
