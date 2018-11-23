@@ -5,7 +5,7 @@ Python library for converting polygons to geohashes and vice versa. This library
 ## Prerequisites
 
 - Python >= 3.6
-- Shapely >= 1.6.3
+- Shapely >= 1.6.4.post2
 - python-geohash >= 0.8.5
 - georaptor >= 2.0.3
 
@@ -22,7 +22,7 @@ $ pip install polyhash
 ## Usage
 
 ```
-$ from polyhash import geohash_to_polygon
+$ from polyhash.polyhash import geohash_to_polygon
 $ geohash_to_polygon('www123')
 > <shapely.geometry.polygon.Polygon at 0x11f19d588>
 $
