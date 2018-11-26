@@ -22,7 +22,7 @@ $ pip install python-polyhash
 ## Usage
 
 ```
-$ from polyhash.polyhash import geohash_to_polygon
+$ from polyhash import geohash_to_polygon
 $ geohash_to_polygon('www123')
 > <shapely.geometry.polygon.Polygon at 0x11f19d588>
 $
