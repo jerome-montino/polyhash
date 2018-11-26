@@ -1,5 +1,4 @@
-import os
-from collections import deque, defaultdict
+from collections import deque
 
 import geohash
 from shapely.geometry import Polygon
@@ -143,7 +142,7 @@ def geohashes_to_polygon(neighborhood):
     Parameters
     ----------
     neighborhood : list
-        List of geohash strings (hashcodes)). Geohashes don't need to be
+        List of geohash strings (hashcodes). Geohashes don't need to be
         adjacent nor should they be of same precision.
 
     Returns
@@ -182,7 +181,7 @@ def polygons_to_geohashes(polygons, precision=6, strict=False, compress=False):
     -------
     enumerate object
         Returns an enumerate object that follows the order of the
-        iterable passed in for the polygon parameter.
+        iterable passed in for the polygons parameter.
     """
 
     max_prec = min(precision, 12)
