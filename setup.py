@@ -10,6 +10,5 @@ setup(
     author_email='jerome.montino@gmail.com',
     url='https://github.com/jerome-montino/polyhash',
     license='MIT',
-    find_packages=find_packages(),
     install_requires=install_requires
 )
