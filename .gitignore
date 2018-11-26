@@ -1,7 +1,7 @@
 .env
 env/
 dist/
-polyhash.egg-info/
+python_polyhash.egg-info/
 build/
 
 .DS_Store
