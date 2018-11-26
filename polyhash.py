@@ -118,6 +118,13 @@ def polygon_to_geohashes(polygon, precision=6, strict=False, compress=False,
         if len(border_geohashes) > 0:
             border_geohashes = gcompress(border_geohashes, minprec, precision)
 
+    if len(inner_geohashes) == 0:
+        inner_geohashes = None
+    if len(outer_geohashes) == 0:
+        outer_geohashes = None
+    if len(border_geohashes) == 0:
+        border_geohashes = None
+
     res_dict = {
         'inner': inner_geohashes,
         'outer': outer_geohashes,
