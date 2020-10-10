@@ -112,8 +112,10 @@ def polygon_to_geohashes(polygon, precision=6, strict=False, compress=False,
 
     if compress and precision > 1:
         minprec = precision - 1
-        inner_geohashes = gcompress(inner_geohashes, minprec, precision)
-        outer_geohashes = gcompress(outer_geohashes, minprec, precision)
+        if len(inner_geohashes) > 0:
+          inner_geohashes = gcompress(inner_geohashes, minprec, precision)
+        if len(outer_geohashes) > 0:
+          outer_geohashes = gcompress(outer_geohashes, minprec, precision)
         if len(border_geohashes) > 0:
             border_geohashes = gcompress(border_geohashes, minprec, precision)
 
