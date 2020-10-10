@@ -4,7 +4,7 @@ install_requires = ['Shapely', 'python-geohash', 'georaptor']
 
 setup(
     name='python-polyhash',
-	version='0.4.0',
+	version='0.5.0',
 	description='Python library for converting polygons to geohashes and vice versa.',
 	author='Jerome Montino',
     author_email='jerome.montino@gmail.com',

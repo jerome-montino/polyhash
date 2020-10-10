@@ -3,6 +3,7 @@ env/
 dist/
 python_polyhash.egg-info/
 build/
+docs/
 
 .DS_Store
 __pycache__/
